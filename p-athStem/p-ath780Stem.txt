@@ -1,0 +1,179 @@
+#biomass reactions 
+stbiomass_wt	0.059300067 C00089[st_c] + 0.056334363 C00031[st_c] + 0.018712463 C00095[st_c] + 0.009592008 C00369[st_c] + 0.009592008 C00369[st_p] + 5.088029976 C00760[st_e] + 30 C00001[st_c] + 30 C00002[st_c] <-> 1 StemBiomass[st_c] + 30 C00008[st_c] + 30 C00009[st_c]
+stbiomass_loss	0.059300067 C00089[st_c] + 0.056334363 C00031[st_c] + 0.018712463 C00095[st_c] + 0.009592008 C00369[st_c] + 0.009592008 C00369[st_p] + 5.088029976 C00760[st_e] + 30 C00001[st_c] + 30 C00002[st_c] -> 30 C00008[st_c] + 30 C00009[st_c]
+stbiomass_main	0.059300067 C00089[st_c] + 0.056334363 C00031[st_c] + 0.018712463 C00095[st_c] + 0.009592008 C00369[st_c] + 0.009592008 C00369[st_p] + 5.088029976 C00760[st_e] + 30 C00001[st_c] + 30 C00002[st_c] -> 30 C00008[st_c] + 30 C00009[st_c]
+stbiomass_scen	0.059300067 C00089[st_c] + 0.056334363 C00031[st_c] + 0.018712463 C00095[st_c] + 0.009592008 C00369[st_c] + 0.009592008 C00369[st_p] + 5.088029976 C00760[st_e] + 30 C00001[st_c] + 30 C00002[st_c] -> 30 C00008[st_c] + 30 C00009[st_c]
+stbiomasssi	1 StemBiomass[st_c] <-> 
+#Glycorysis and gluconeogenesis 
+R00959[st_c]	1 C00103[st_c] <-> 1 C00668[st_c] 
+R02740[st_c]	1 C00668[st_c] <-> 1 C05345[st_c] 
+R04779[st_c]	1 C00002[st_c] + 1 C05345[st_c] -> 1 C00008[st_c] + 1 C05378[st_c] 
+R01070[st_c]	1 C05378[st_c] <-> 1 C00111[st_c] + 1 C00118[st_c] 
+R01015[st_c]	1 C00111[st_c] <-> 1 C00118[st_c] 
+R01058[st_c]	1 C00118[st_c] + 1 C00006[st_c] + 1 C00001[st_c] -> 1 C00197[st_c] + 1 C00005[st_c] + 1 C00080[st_c] 
+R01518[st_c]	1 C00197[st_c] <-> 1 C00631[st_c] 
+R00658[st_c]	1 C00631[st_c] <-> 1 C00001[st_c] + 1 C00074[st_c] 
+R00200[st_c]	1 C00008[st_c] + 1 C00074[st_c] -> 1 C00002[st_c] + 1 C00022[st_c] 
+R00014[st_c]	1 C00022[st_c] + 1 C00068[st_c] -> 1 C05125[st_c] + 1 C00011[st_c] 
+R03270[st_c]	1 C05125[st_c] + 1 C15972[st_c] -> 1 C16255[st_c] + 1 C00068[st_c] 
+R07618[st_c]	1 C15973[st_c] + 1 C00003[st_c] <-> 1 C15972[st_c] + 1 C00004[st_c] + 1 C00080[st_c] 
+R02569[st_c]	1 C00010[st_c] + 1 C16255[st_c] <-> 1 C00024[st_c] + 1 C15973[st_c] 
+R01196[st_c]	2 C00139[st_c] + 1 C00022[st_c] + 1 C00010[st_c] -> 2 C00138[st_c] + 1 C00024[st_c] + 1 C00011[st_c] + 2 C00080[st_c] 
+R01061[st_c]	1 C00118[st_c] + 1 C00009[st_c] + 1 C00003[st_c] -> 1 C00236[st_c] + 1 C00004[st_c] + 1 C00080[st_c] 
+R01512[st_c]	1 C00008[st_c] + 1 C00236[st_c] <-> 1 C00002[st_c] + 1 C00197[st_c] 
+R00755[st_c]	1 C05125[st_c] -> 1 C00084[st_c] + 1 C00068[st_c] 
+R00710[st_c]	1 C00084[st_c] + 1 C00003[st_c] + 1 C00001[st_c] <-> 1 C00033[st_c] + 1 C00004[st_c] + 1 C00080[st_c] 
+#TCA cycle 
+R00014[st_im]	1 C00022[st_im] + 1 C00068[st_im] -> 1 C05125[st_im] + 1 C00011[st_im] 
+R03270[st_im]	1 C05125[st_im] + 1 C15972[st_im] -> 1 C16255[st_im] + 1 C00068[st_im] 
+R02569[st_im]	1 C00010[st_im] + 1 C16255[st_im] -> 1 C00024[st_im] + 1 C15973[st_im] 
+R00351[st_im]	1 C00024[st_im] + 1 C00001[st_im] + 1 C00036[st_im] -> 1 C00158[st_im] + 1 C00010[st_im] 
+R00352[st_im]	1 C00008[st_im] + 1 C00009[st_im] + 1 C00024[st_im] + 1 C00036[st_im] -> 1 C00002[st_im] + 1 C00158[st_im] + 1 C00010[st_im] 
+R01325[st_im]	1 C00158[st_im] -> 1 C00417[st_im] + 1 C00001[st_im] 
+R01900[st_im]	1 C00417[st_im] + 1 C00001[st_im] -> C00311[st_im] 
+R01899[st_im]	1 C00311[st_im] + 1 C00006[st_im] -> 1 C05379[st_im] + 1 C00005[st_im] + 1 C00080[st_im] 
+R00268[st_im]	1 C05379[st_im] -> 1 C00026[st_im] + 1 C00011[st_im] 
+R00709[st_im]	1 C00311[st_im] + 1 C00003[st_im] -> 1 C00026[st_im] + 1 C00011[st_im] + 1 C00004[st_im] + 1 C00080[st_im] 
+R02570[st_im]	1 C00010[st_im] + 1 C16254[st_im] <-> 1 C00091[st_im] + 1 C15973[st_im]  
+R00432[st_im]	1 C00035[st_im] + 1 C00009[st_im] + 1 C00091[st_im] -> 1 C00044[st_im] + 1 C00042[st_im] + 1 C00010[st_im] 
+R00330[st_im]	1 C00008[st_im] + 1 C00044[st_im] <-> 1 C00002[st_im] + 1 C00035[st_im] 
+R00405[st_im]	1 C00008[st_im] + 1 C00009[st_im] + 1 C00091[st_im] -> 1 C00002[st_im] + 1 C00042[st_im] + 1 C00010[st_im] 
+R10343[st_im]	1 C00091[st_im] + 1 C00033[st_im] -> 1 C00024[st_im] + 1 C00042[st_im] 
+R01082[st_im]	1 C00122[st_im] + 1 C00001[st_im] -> 1 C00149[st_im] 
+R01197[st_im]	2 C00139[st_im] + 1 C00026[st_im] + 1 C00010[st_im] -> 2 C00138[st_im] + 1 C00091[st_im] + 1 C00011[st_im] + 2 C00080[st_im] 
+R03316[st_im]	1 C05381[st_im] + 1 C15972[st_im] -> 1 C16254[st_im] + 1 C00068[st_im] 
+R00621[st_im]	1 C00026[st_im] + 1 C00068[st_im] -> 1 C05381[st_im] + 1 C00011[st_im] 
+R07618[st_im]	1 C15973[st_im] + 1 C00003[st_im] -> 1 C15972[st_im] + 1 C00004[st_im] + 1 C00080[st_im] 
+R01195[st_im]	2 C00138[st_im] + 1 C00006[st_im] + 1 C00080[st_im] <-> 2 C00139[st_im] + 1 C00005[st_im]  
+R00361[st_im]	1 C00149[st_im] + 1 C15602[st_im] -> 1 C00036[st_im] + 1 C15603[st_im] 
+R00235[st_im]	1 C00002[st_im] + 1 C00033[st_im] + 1 C00010[st_im] <- 1 C00020[st_im] + 1 C00013[st_im] + 1 C00024[st_im]
+R00087[st_im]	1 C00002[st_im] + 1 C00001[st_im] -> 1 C00020[st_im] + 1 C00013[st_im] 
+R00127[st_im]	1 C00002[st_im] + 1 C00020[st_im] -> 2 C00008[st_im]
+#Oxydative phosphoryration 
+R200[st_im]	1 C00004[st_im] -> 1 C00003[st_im] + 1 C00080[st_im] + 2 C05359[st_im] 
+R201[st_im]	1 C00399[st_im] + 2 C05359[st_im] + 6 C00080[st_im] -> 1 C00390[st_im] + 4 C00080[st_om]
+R202[st_im]	2 C00080[st_im] + 1 C00390[st_im] -> 4 C00080[st_om] + 1 C00399[st_im] + 2 C05359[st_im] 
+R203[st_im]	1 C00007[st_im] + 8 C00080[st_im] + 4 C05359[st_im] -> 2 C00001[st_im] + 4 C00080[st_om]
+R204[st_im]	1 C00009[st_im] + 1 C00008[st_im] + 3 C00080[st_om] -> 3 C00080[st_im] + 1 C00002[st_im] + 1 C00001[st_im]
+R02164[st_im]	1 C15602[st_im] + 1 C00042[st_im] -> 1 C15603[st_im] + 1 C00122[st_im] 
+R07358[st_im]	1 C00004[st_im] + 1 C00080[st_im] + 1 C15602[st_im] <-> 1 C00003[st_im] + 1 C15603[st_im]
+R02163[st_im]	1 C00390[st_im] + 1 C00003[st_im] <-> 1 C00399[st_im] + 1 C00004[st_im] + 1 C00080[st_im]
+#starch and sucrose metabolism 
+R01823[st_c]	1 C00089[st_c] <-> 1 C00095[st_c] + 1 C00718[st_c] 
+R00760[st_c]	1 C00002[st_c] + 1 C00095[st_c] -> 1 C00008[st_c] + 1 C00085[st_c] 
+R00771[st_c]	1 C00085[st_c] <-> 1 C00092[st_c] 
+R08639[st_c]	1 C00092[st_c] <-> 1 C00103[st_c]  
+R00289[st_c]	1 C00075[st_c] + 1 C00103[st_c] -> 1 C00013[st_c] + 1 C00029[st_c] 
+R00948[st_c]	1 C00002[st_c] + 1 C00103[st_c] -> 1 C00013[st_c] + 1 C00498[st_c] 
+R02421[st_c]	1 C00498[st_c] <-> 1 C00008[st_c] + 1 C00718[st_c] 
+R02110[st_c]	2 C00718[st_c] <-> 1 C00369[st_c] 
+R00803[st_c]	1 C00089[st_c] + 1 C00009[st_c] <-> 1 C00095[st_c] + 1 C00103[st_c] 
+R02889[st_e]	1 C00029[st_e] -> 1 C00015[st_e] + 1 C00760[st_e] 
+R00155[st_e]	1 C00015[st_e] + 1 C00001[st_e] -> 1 C00105[st_e] + 1 C00009[st_e] 
+R00801[st_c]	1 C00089[st_c] + 1 C00001[st_c] <-> 1 C00095[st_c] + 1 C00031[st_c] 
+#Miscellaneous reactions 
+R00004_1[st_c]	1 C00013[st_c] + 1 C00001[st_c] + 1 C00080[st_c] -> 2 C00009[st_c] + 1 C00080[st_e]
+R00004_2[st_c]	1 C00013[st_c] + 1 C00001[st_c] + 1 C00080[st_c] -> 2 C00009[st_c] + 1 C00080[st_p]
+R00004[st_im]	1 C00013[st_im] + 1 C00001[st_im] + 1 C00080[st_im] -> 2 C00009[st_im] + 1 C00080[st_c]
+R01195[st_c]	2 C00138[st_c] + 1 C00006[st_c] + 1 C00080[st_c] <-> 2 C00139[st_c] + 1 C00005[st_c] 
+R00112[st_c]	1 C00005[st_c] + 1 C00003[st_c] <-> 1 C00006[st_c] + 1 C00004[st_c] 
+R00113[st_c]	1 C00027[st_c] + 1 C00005[st_c] + 1 C00080[st_c] -> 1 C00006[st_c] + 2 C00001[st_c] 
+R00113[st_im]	1 C00027[st_im] + 1 C00005[st_im] + 1 C00080[st_im] -> 1 C00006[st_im] + 2 C00001[st_im] 
+R00009[st_c]	2 C00027[st_c] <-> 1 C00007[st_c] + 2 C00001[st_c] 
+R00009[st_im]	2 C00027[st_im] <-> 1 C00007[st_im] + 2 C00001[st_im] 
+#carnitine-mediated transport of acetate 
+R02496[st_c]	1 C00024[st_c] + 1 C00487[st_c] -> 1 C00010[st_c] + 1 C02571[st_c] 
+R02496[st_im]	1 C00024[st_im] + 1 C00487[st_im] <- 1 C00010[st_im] + 1 C02571[st_im] 
+#one carbon metabolism 
+R07168[st_im]	1 C00440[st_im] + 1 C00003[st_im] <-> 1 C00143[st_im] + 1 C00004[st_im] + 1 C00080[st_im] 
+R01217[st_im]	1 C00143[st_im] + 2 C00138[st_im] + 2 C00080[st_im] <-> 1 C00440[st_im] + 2 C00139[st_im] 
+#Pyrimidine metabolism 
+R00158[st_c]	1 C00002[st_c] + 1 C00105[st_c] <-> 1 C00008[st_c] + 1 C00015[st_c] 
+R00156[st_c]	1 C00002[st_c] + 1 C00015[st_c] -> 1 C00008[st_c] + 1 C00075[st_c] 
+#Starch metabolism 
+R02421[st_p]	1 C00498[st_p] <-> 1 C00008[st_p] + 1 C00718[st_p] 
+R02110[st_p]	2 C00718[st_p] <-> 1 C00369[st_p] 
+#glyoxylate and dicarboxylate metabolism
+R00472[st_im]	1 C00149[st_im] + 1 C00010[st_im] <-> 1 C00024[st_im] + 1 C00001[st_im] + 1 C00048[st_im] 
+R00479[st_im]	1 C00311[st_im] <-> 1 C00042[st_im] + 1 C00048[st_im] 
+R00472[st_c]	1 C00149[st_c] + 1 C00010[st_c] <-> 1 C00024[st_c] + 1 C00001[st_c] + 1 C00048[st_c] 
+R00479[st_c]	1 C00311[st_c] <-> 1 C00042[st_c] + 1 C00048[st_c] 
+R00342[st_c]	1 C00149[st_c] + 1 C00003[st_c] <-> 1 C00036[st_c] + 1 C00004[st_c] + 1 C00080[st_c]
+R00351[st_c]	1 C00158[st_c] + 1 C00010[st_c] <-> 1 C00024[st_c] + 1 C00001[st_c] + 1 C00036[st_c]
+R01325[st_c]	1 C00158[st_c] <-> 1 C00417[st_c] + 1 C00001[st_c]
+R01900[st_c]	1 C00311[st_c] <-> 1 C00417[st_c] + 1 C00001[st_c]
+#Transport and exchange reactions 
+R001t[st]	1 C00001[st_e] <-> 1 C00001[st_c] 
+R002t[st]	1 C00001[st_c] <-> 1 C00001[st_p] 
+R003t[st]	1 C00009[st_e] + 1 C00080[st_e] -> 1 C00009[st_c] + 1 C00080[st_c] 
+R004t[st]	1 C00011[st_e] <-> 1 C00011[st_c] 
+R005t[st]	1 C00007[st_e] <-> 1 C00007[st_c] 
+R006t[st]	1 C00002[st_om] + 1 C00008[st_c] -> 1 C00002[st_c] + 1 C00008[st_om] 
+R007t[st]	1 C00002[st_im] + 1 C00008[st_om] -> 1 C00002[st_om] + 1 C00008[st_im] 
+R008t[st]	1 C00007[st_c] <-> 1 C00007[st_om] 
+R009t[st]	1 C00007[st_om] <-> 1 C00007[st_im] 
+R014t[st]	1 C00022[st_c] + 1 C00080[st_c] <-> 1 C00022[st_om] + 1 C00080[st_om] 
+R015t[st]	1 C00022[st_om] + 1 C00080[st_om] <-> 1 C00022[st_im] + 1 C00080[st_im] 
+R016t[st]	1 C00036[st_c] + 1 C00149[st_om] -> 1 C00036[st_om] + 1 C00149[st_c] 
+R017t[st]	1 C00036[st_om] + 1 C00149[st_im] -> 1 C00036[st_im] + 1 C00149[st_om] 
+R116t[st]	1 C00042[st_c] + 1 C00149[st_om] -> 1 C00042[st_om] + 1 C00149[st_c] 
+R117t[st]	1 C00042[st_om] + 1 C00149[st_im] -> 1 C00042[st_im] + 1 C00149[st_om] 
+R018t[st]	1 C00001[st_c] <-> 1 C00001[st_om] 
+R019t[st]	1 C00001[st_om] <-> 1 C00001[st_im] 
+R020t[st]	1 C00009[st_c] + 1 C00080[st_c] <-> 1 C00009[st_om] + 1 C00080[st_om] 
+R021t[st]	1 C00009[st_om] + 1 C00080[st_om] <-> 1 C00009[st_im] + 1 C00080[st_im] 
+R025t[st]	1 C00080[st_c] + 1 C00089[st_c] <-> 1 C00080[st_e] + 1 C00089[st_e] 
+R026t[st]	1 C00029[st_c] + 1 C00105[st_e] -> 1 C00029[st_e] + 1 C00105[st_c] 
+R027t[st]	1 C00026[st_om] + 1 C00158[st_im] <-> 1 C00158[st_om] + 1 C00026[st_im] 
+R028t[st]	1 C00026[st_c] + 1 C00158[st_om] <-> 1 C00158[st_c] + 1 C00026[st_om] 
+R033t[st]	3 C00080[st_c] + 1 C00002[st_c] + 1 C00001[st_c] -> 3 C00080[st_e] + 1 C00008[st_c] + 1 C00009[st_c] 
+R034t[st]	1 C00011[st_im] <-> 1 C00011[st_om] 
+R035t[st]	1 C00011[st_om] <-> 1 C00011[st_c] 
+R036t[st]	1 C00498[st_c] + 1 C00008[st_p] <-> 1 C00498[st_p] + 1 C00008[st_c] 
+R900t[st]	1 C02571[st_c] + 1 C00487[st_om] -> 1 C02571[st_om] + 1 C00487[st_c] 
+R901t[st]	1 C02571[st_om] + 1 C00487[st_im] -> 1 C02571[st_im] + 1 C00487[st_om] 
+R034si[st]	1 C00369[st_c] <->
+R036si[st]	1 C00760[st_e] ->
+R037si[st]	1 C00089[st_e] <->
+R038ex[st]	1 C00064[st_e] ->
+R039ex[st]	1 C00064[st_e] <-
+R040ex[st]	1 C00062[st_e] ->
+R041ex[st]	1 C00062[st_e] <-
+R042ex[st]	1 C00097[st_e] ->
+R043ex[st]	1 C00097[st_e] <-
+R044ex[st]	1 C00047[st_e] ->
+R045ex[st]	1 C00047[st_e] <-
+R046ex[st]	1 C00073[st_e] ->
+R047ex[st]	1 C00073[st_e] <-
+R048ex[st]	1 C00148[st_e] ->
+R049ex[st]	1 C00148[st_e] <-
+R050ex[st]	1 C00078[st_e] ->
+R051ex[st]	1 C00078[st_e] <-
+R052ex[st]	1 C00041[st_e] ->
+R053ex[st]	1 C00041[st_e] <-
+R054ex[st]	1 C00089[st_e] <-
+R055ex[st]	1 C00089[st_e] ->
+R057ex[st]	1 C00059[st_e] -> 
+R058ex[st]	1 C00059[st_e] <-
+R059ex[st]	1 C00007[st_e] <-
+R060ex[st]	1 C00244[st_e] <-
+R061ex[st]	1 C00244[st_e] ->
+R062ex[st]	1 C00001[st_e] -> 
+R063ex[st]	1 C00001[st_e] <-
+R064ex[st]	1 C00009[st_e] ->
+R065ex[st]	1 C00009[st_e] <-
+R066ex[st]	1 C00011[st_e] ->
+R067ex[st]	1 C00080[st_e] <->
+R068ex[st]	1 C00080[st_e] <->
+R069ex[st]	1 C00049[st_e] <-
+R070ex[st]	1 C00049[st_e] ->
+R071ex[st]	1 C00188[st_e] <-
+R072ex[st]	1 C00188[st_e] ->
+R073ex[st]	1 C00065[st_e] <-
+R074ex[st]	1 C00065[st_e] ->
+R075ex[st]	1 C00025[st_e] <-
+R076ex[st]	1 C00025[st_e] ->
+R077ex[st]	1 C00037[st_e] <-
+R078ex[st]	1 C00037[st_e] ->
+R079ex[st]	1 C00183[st_e] <-
+R080ex[st]	1 C00183[st_e] ->
